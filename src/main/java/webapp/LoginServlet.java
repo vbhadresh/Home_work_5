@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 	  private String streetAddress;
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-		request.getRequestDispatcher("/WEB-INF/views/GetFormData.jsp").forward(request, response);
+		request.getRequestDispatcher("GetFormData.jsp").forward(request, response);
 
 	}
 	
@@ -83,7 +83,7 @@ public class LoginServlet extends HttpServlet {
 				session.setAttribute("lat", latLongs[0]);
 				session.setAttribute("long", latLongs[1]);
 				System.out.println("hgj"+request.getParameter("city"));
-				request.getRequestDispatcher("/WEB-INF/views/ValidateFormDate.jsp").forward(request, response);
+				request.getRequestDispatcher("ValidateFormDate.jsp").forward(request, response);
 //				System.out.println("Servlet, JSP , Session Bean and  Google API validated Successfully ");
 //				System.exit(0);
 	    	}catch(Exception e){

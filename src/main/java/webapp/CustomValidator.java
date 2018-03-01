@@ -5,7 +5,7 @@ import javax.validation.constraints.Pattern;
 
 public class CustomValidator {
 	@NotNull(message = "Zip Code cannot be null")
-	@Pattern(regexp = "^[0-9]{5}?[-.][0-9]{4}?$",message="Pattern mismatch")
+	
 	//@Pattern(regexp = "[0-9]{5}$",message="Pattern mismatch")
 	private String zipcode;
 	

@@ -53,10 +53,10 @@ function ValidateInput(){
 </script>
 </head>
 <body id="background">
-<div >
+<div>
 <h1 align="center" font-style="bold" font-size="16px"> Welcome to Registration Form </h1>
 <h1 align="center" font-style="italic" font-size="10px">Registration Form</h1>
-<form name="validationform" method="post" action="/login" onSubmit="return ValidateInput()">
+<form name="validationform" method="post" action="login" onSubmit="return ValidateInput()">
 <table align="center">
 <tr>
 <td><label> CustomerName: </label></td>
